@@ -1,0 +1,15 @@
+//use 404.html so it can recieve every link (only recieve http / https link's (if you input without http / https it will loop redirect you to the same page))
+//sorry if my grammar is bad
+<html>
+  <head>
+    <title>Redirecting you</title>
+  </head>
+  <body onload=red()>
+    <script type="text/javascript">
+      function red() {
+        var url = window.location.href;
+        url = url.replace("https://red78massive1573.github.io/red/", '');
+        window.location.replace(url);
+        </script>
+  </body>
+</html>
