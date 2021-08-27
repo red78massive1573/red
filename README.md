@@ -13,6 +13,6 @@ https://red78massive1573.github.io/red/(link)
 
 Example:
 
-https://red78massive1573.github.io/red/https://google.com/
+[https://red78massive1573.github.io/red/https://google.com/](https://red78massive1573.github.io/red/https://google.com/)
 
 [Click here](https://red78massive1573.github.io/) to go back to main page
