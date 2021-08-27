@@ -1,22 +1,18 @@
 <html>
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="icon" href="/files/icons/main-favicon.ico" type="image/x-icon">
-    <title>Redirecting you</title>
-    <link rel="stylesheet" href="/files/config/main.css" type="text/css"/>
+		<title>Redirecting you</title>
+		<link rel="stylesheet" href="/files/config/main.css" type="text/css"/>
+		<link rel="stylesheet" href="./files/config/main.css" type="text/css"/>
 		<script src="/files/config/copy.js"></script>
+		<script src="/files/config/red.js"></script>
 		<script src="/files/config/count.js"></script>
-  </head>
-  <body onload=red()>
-    <section id="content" class="body">
-      <h1>Redirecting you<span id="dots"></span></h1>
-    </section>
-    <script type="text/javascript">
-      function red() {
-        var url = window.location.href;
-        url = url.replace("https://red78massive1573.github.io/red/", "")
-        window.location.replace(url);
-      }
-    </script>
-  </body>
+	</head>
+	<body onload=red()>
+		<section id="content" class="body">
+			<h1>Redirecting you</h1>
+			<h1 class="dot one">.</h1><h1 class="dot two">.</h1><h1 class="dot three">.</h1>
+		</section>
+	</body>
 </html>
