@@ -1,8 +1,16 @@
 <html>
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="icon" href="/files/icons/main-favicon.ico" type="image/x-icon">
     <title>Redirecting you</title>
+    <link rel="stylesheet" href="/files/config/main.css" type="text/css"/>
+		<script src="/files/config/copy.js"></script>
+		<script src="/files/config/count.js"></script>
   </head>
   <body onload=red()>
+    <section id="content" class="body">
+      <h1>Redirecting you<span id="dots"></span></h1>
+    </section>
     <script type="text/javascript">
       function red() {
         var url = window.location.href;
