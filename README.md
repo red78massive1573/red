@@ -7,10 +7,12 @@ I used 404.html so it can recieve every link (only recieve http / https link's (
 
 Sorry if my grammar is bad
 
-use:
+Use:
 
 https://red78massive1573.github.io/red/(link)
 
-example:
+Example:
 
 https://red78massive1573.github.io/red/https://google.com/
+
+[Click here](https://red78massive1573.github.io/) to go back to main page
