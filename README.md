@@ -1,4 +1,3 @@
-<link rel="icon" href="/files/icons/main-favicon.ico" type="image/x-icon">
 # red
 Redirector
 
