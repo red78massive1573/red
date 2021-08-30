@@ -9,7 +9,7 @@ Sorry if my grammar is bad
 
 Use:
 
-[https://red78massive1573.github.io/red/(link)]()
+https://red78massive1573.github.io/red/(link)
 
 Example:
 
