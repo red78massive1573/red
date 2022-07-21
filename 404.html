@@ -77,15 +77,18 @@
 				
 			var url = window.location.href;
 			url = url.replace("https://red78massive1573.github.io/red/", "");
-			if url.startsWith("http"):
+			if url.startsWith("http") {
 				redirect(url);
-			else:
+			}
+			else {
 				var links = require("./link.json");
 				try {
 					redirect(links[0][url].link);
 				}
 				catch(err) {
 					document.getElementById("error").innerHTML = err.message;
+				}
+			}
 		</script>
 	</head>
 	<body>
