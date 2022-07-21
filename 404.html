@@ -69,18 +69,32 @@
 			}
 		</style>
 		<script>
-        		setTimeout(function red() {
-				console.log("redirecting...");
-				var url = window.location.href;
-				url = url.replace("https://red78massive1573.github.io/red/", "");
-				window.location.replace(url);
-			}, 5000)
+			function redirect(url) {
+				setTimeout(function() {
+					window.location.replace(url);
+				}, 5000)
+			}
+				
+			var url = window.location.href;
+			url = url.replace("https://red78massive1573.github.io/red/", "");
+			if url.startsWith("http"):
+				redirect(url);
+			else:
+				var links = require("./link.json");
+				try {
+					redirect(links[0][url].link);
+				}
+				catch(err) {
+					document.getElementById("error").innerHTML = err.message;
 		</script>
 	</head>
 	<body>
 		<div class="loading-dots">
 			<h1>Redirecting You</h1>
 			<h1 class="dot one">.</h1><h1 class="dot two">.</h1><h1 class="dot three">.</h1>
+		</div>
+		<div>
+			<h3 id="error"></h3>
 		</div>
 	</body>
 </html>
