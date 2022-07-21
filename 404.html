@@ -69,21 +69,20 @@
 			}
 		</style>
 		<script>
-			function redirect(url) {
-				setTimeout(function() {
-					window.location.replace(url);
-				}, 5000)
-			}
-				
 			var url = window.location.href;
 			url = url.replace("https://red78massive1573.github.io/red/", "");
 			#if url.startsWith("http") {
-				redirect(url)
+				setTimeout(function() {
+					window.location.replace(url);
+				}, 5000)
 			#}
 			#else {
 			#	var links = require("./link.json");
+			#	var res = links[0][url].link
 			#	try {
-			#		redirect(links[0][url].link)
+			#		setTimeout(function() {
+			#			window.location.replace(res);
+			#		}, 5000)
 			#	}
 			#	catch(err) {
 			#		document.getElementById("error").innerHTML = err.message;
