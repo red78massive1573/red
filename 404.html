@@ -72,7 +72,8 @@
 			setTimeout(function() {
 				var url = window.location.href;
 				url = url.replace("https://red78massive1573.github.io/red/", "");
-				if url.startsWith("http") {
+				starts = url.startsWith("http")
+				if starts {
 					window.location.replace(url);
 				}
 				else {
