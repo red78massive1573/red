@@ -72,9 +72,9 @@
 			var url = window.location.href;
 			url = url.replace("https://red78massive1573.github.io/red/", "");
 			#if url.startsWith("http") {
-				setTimeout(function() {
-					window.location.replace(url);
-				}, 5000)
+			setTimeout(function() {
+				window.location.replace(url);
+			}, 5000)
 			#}
 			#else {
 			#	var links = require("./link.json");
