@@ -69,25 +69,23 @@
 			}
 		</style>
 		<script>
-			var url = window.location.href;
-			url = url.replace("https://red78massive1573.github.io/red/", "");
-			#if url.startsWith("http") {
 			setTimeout(function() {
-				window.location.replace(url);
+				var url = window.location.href;
+				url = url.replace("https://red78massive1573.github.io/red/", "");
+				if url.startsWith("http") {
+					window.location.replace(url);
+				}
+				else {
+					var links = require("./link.json");
+					var res = links[0][url].link
+					try {
+						window.location.replace(res);
+					}
+					catch(err) {
+						document.getElementById("error").innerHTML = err.message;
+					}
+				}
 			}, 5000)
-			#}
-			#else {
-			#	var links = require("./link.json");
-			#	var res = links[0][url].link
-			#	try {
-			#		setTimeout(function() {
-			#			window.location.replace(res);
-			#		}, 5000)
-			#	}
-			#	catch(err) {
-			#		document.getElementById("error").innerHTML = err.message;
-			#	}
-			#}
 		</script>
 	</head>
 	<body>
